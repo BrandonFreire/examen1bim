@@ -16,7 +16,7 @@ from src.retrievers import BM25Retriever, Retriever, TfidfRetriever
 CORPUS_NAME = "nfcorpus"
 STEM = True
 SNIPPET_CHARS = 250
-MAX_TOP_K = 1000
+MAX_TOP_K = 10_000
 
 
 class SearchRequest(BaseModel):

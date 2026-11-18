@@ -1,6 +1,3 @@
-cd "/Users/brandonfreire/Documents/Proyectos/ExamenICCD753 "
-
-cat << 'EOF' > .gitignore
 # Entornos virtuales y Python
 .venv/
 venv/
@@ -8,6 +5,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .ruff_cache/
+.ipynb_checkpoints/
 
 # Sistema operativo
 .DS_Store
@@ -17,4 +15,3 @@ referencia/
 build_nb.py
 run_nb.py
 *.log
-EOF
