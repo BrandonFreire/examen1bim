@@ -34,22 +34,6 @@ curl -X POST http://127.0.0.1:10000/search \
 
 La primera vez descarga el corpus de Hugging Face (unos 3 MB).
 
-## Desplegar en Render (Docker)
-
-1. Sube el proyecto a GitHub.
-2. En [render.com](https://render.com): **New → Web Service** y elige el repositorio.
-3. Configura:
-   - **Language:** `Docker` (usa el `Dockerfile` de la raíz)
-   - **Instance Type:** `Free`
-   - Sin variables de entorno: Render define `PORT` solo.
-   - **Health Check Path** (opcional): `/health`
-4. Pulsa **Create Web Service**. El build descarga el corpus y los recursos de NLTK, así que el arranque es rápido.
-5. Cuando diga *Live*, la URL será `https://<nombre>.onrender.com`. Pruébala en Postman:
-   - `GET https://<nombre>.onrender.com/health`
-   - `POST https://<nombre>.onrender.com/search` con Body → raw → JSON.
-
-> En el plan gratuito el servicio se duerme tras unos 15 minutos sin uso; la primera petición después puede tardar. Abre `/health` antes de una demostración.
-
 ## Estructura
 
 ```
