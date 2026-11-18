@@ -1,0 +1,20 @@
+cd "/Users/brandonfreire/Documents/Proyectos/ExamenICCD753 "
+
+cat << 'EOF' > .gitignore
+# Entornos virtuales y Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Sistema operativo
+.DS_Store
+
+# Archivos temporales y de referencia del examen
+referencia/
+build_nb.py
+run_nb.py
+*.log
+EOF

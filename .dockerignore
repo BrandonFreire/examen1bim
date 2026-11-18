@@ -1,0 +1,9 @@
+.venv
+.git
+.DS_Store
+__pycache__
+*.pyc
+.pytest_cache
+referencia
+examen1bim.ipynb
+tests
